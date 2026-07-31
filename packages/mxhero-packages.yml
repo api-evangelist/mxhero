@@ -1,0 +1,25 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/mxaiorg
+note: >-
+  mxHERO publishes no traditional client SDK on npm/PyPI/Maven/NuGet/etc. Its
+  first-party distributed software is the Mail2Cloud Advanced MCP server, shipped
+  in two official implementations (Go and Python) plus prebuilt/signed Go
+  binaries. Listed here as installable first-party packages; not client SDKs.
+packages:
+- language: go
+  registry: github
+  name: github.com/mxaiorg/mxmcp
+  url: https://github.com/mxaiorg/mxmcp
+  install: git clone https://github.com/mxaiorg/mxmcp && cd mxmcp && go mod tidy && make mac-arm
+  official: true
+  kind: mcp-server
+  note: Go stdio MCP server; Makefile builds prebuilt binaries for Windows/Mac/Linux.
+- language: python
+  registry: github
+  name: github.com/mxaiorg/mxmcp-py
+  url: https://github.com/mxaiorg/mxmcp-py
+  install: git clone https://github.com/mxaiorg/mxmcp-py
+  official: true
+  kind: mcp-server
+  note: Python implementation of the mxHERO Mail2Cloud Advanced MCP server.

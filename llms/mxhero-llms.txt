@@ -1,0 +1,31 @@
+# mxHERO
+
+> mxHERO Inc. is the pioneer of email-to-cloud content management. Its Mail2Cloud platform captures email and attachments (in-flight or at-rest) over SMTP/S and IMAP/S and routes them into cloud content platforms such as Box, Egnyte, Microsoft OneDrive, Google Drive, and Dropbox. Mail2Cloud Advanced adds an AI email knowledge layer with a Model Context Protocol (MCP) server for secure, agent-driven email search.
+
+## APIs & Agent Surface
+- [mxHERO Mail2Cloud Advanced](https://www.mxhero.com/advanced-ai): AI email knowledge recovery service with an official MCP server.
+- [MCP server (Go)](https://github.com/mxaiorg/mxmcp): stdio MCP server exposing the `email_search` tool.
+- [MCP server (Python)](https://github.com/mxaiorg/mxmcp-py): Python implementation of the same server.
+- [Streamable HTTP endpoint](https://lab4-mcp.mxhero.com/mcp2/connect): hosted MCP transport.
+- [Access tokens](https://lab4-mcp.mxhero.com/tokens): obtain mxHERO Vector Search credentials.
+
+## Artifacts (API Evangelist)
+- [MCP server manifest](mcp/mxhero-mcp.yml)
+- [Packages](packages/mxhero-packages.yml)
+- [Authentication](authentication/mxhero-authentication.yml)
+- [Agent skill: email knowledge search](skills/mxhero-email-knowledge-search.md)
+- [Domain security](security/mxhero-domain-security.yml)
+
+## Docs
+- [Knowledge base](https://mxhero.helpjuice.com/)
+- [Mail2Cloud Advanced / AI docs](https://mxhero.helpjuice.com/en_US/mxhero-ai)
+- [Help Center](https://support.mxhero.com/hc/en-us)
+- [Products](https://www.mxhero.com/products)
+
+## Company
+- [Website](https://mxhero.com)
+- [Blog](https://web-new.mxhero.com/blog/)
+- [Products & pricing](https://www2.mxhero.com/products-pricing.html)
+- [Terms of Service](https://www.mxhero.com/tos)
+- [Privacy](https://www.mxhero.com/privacy)
+- [GitHub org](https://github.com/mxaiorg)

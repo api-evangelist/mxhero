@@ -1,7 +1,16 @@
 aid: mxhero
 name: mxHero
-description: mxHero is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  mxHERO Inc. is the pioneer of email-to-cloud content management, based in San
+  Francisco and a long-time Box partner. Its Mail2Cloud platform is a bridge that
+  intelligently captures email and attachments (in-flight or at-rest) over SMTP/S
+  and IMAP/S and routes them, bi-directionally, into cloud content platforms such
+  as Box, Egnyte, Microsoft OneDrive, Google Drive, and Dropbox — without
+  retaining the content itself. Mail2Cloud Advanced adds an AI email-knowledge
+  layer: captured email is deduplicated, metadata-preserved, and stored in an
+  isolated per-tenant vector database that an official Model Context Protocol
+  (MCP) server exposes to AI agents for secure email search and knowledge
+  recovery, with a V3 REST API for dataset and S/MIME management.
 url: https://raw.githubusercontent.com/api-evangelist/mxhero/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +18,56 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+image: https://mxhero.com/wp-content/uploads/2021/03/mxhero-logo.png
 tags:
 - Company
-apis: []
+- Email
+- Cloud Storage
+- Content Management
+- Email to Cloud
+- Artificial Intelligence
+- MCP
+- Email Search
+- Compliance
+- Collaboration
+apis:
+- name: mxHERO Mail2Cloud Advanced (AI Email Knowledge)
+  description: >-
+    AI email knowledge-recovery service. Captured company email is optimized and
+    stored in an isolated per-tenant vector database, then exposed to AI agents
+    through an official MCP server (email_search tool) over stdio and streamable
+    HTTP, secured with mxHERO Vector Search access tokens.
+  humanURL: https://www.mxhero.com/advanced-ai
+  baseURL: https://lab4-mcp.mxhero.com
+  tags:
+  - Email
+  - AI
+  - MCP
+  - Search
+  properties:
+  - type: MCPServer
+    url: mcp/mxhero-mcp.yml
+  - type: Documentation
+    url: https://mxhero.helpjuice.com/en_US/mxhero-ai
+  - type: Authentication
+    url: authentication/mxhero-authentication.yml
+  - type: AgentSkill
+    url: skills/mxhero-email-knowledge-search.md
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -23,3 +76,36 @@ maintainers:
 common:
 - type: Website
   url: https://mxhero.com
+- type: Products
+  url: https://www.mxhero.com/products
+- type: Documentation
+  url: https://mxhero.helpjuice.com/en_US/mxhero-ai
+- type: HelpCenter
+  url: https://support.mxhero.com/hc/en-us
+- type: Blog
+  url: https://web-new.mxhero.com/blog/
+- type: Pricing
+  url: https://www2.mxhero.com/products-pricing.html
+- type: TermsOfService
+  url: https://www.mxhero.com/tos
+- type: PrivacyPolicy
+  url: https://www.mxhero.com/privacy
+- type: GitHubOrganization
+  url: https://github.com/mxaiorg
+- type: MCPServer
+  url: mcp/mxhero-mcp.yml
+- type: Packages
+  url: packages/mxhero-packages.yml
+- type: Authentication
+  url: authentication/mxhero-authentication.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: LLMsTxt
+  url: llms/mxhero-llms.txt
+- type: DomainSecurity
+  url: security/mxhero-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 7
+  pass: local-v1

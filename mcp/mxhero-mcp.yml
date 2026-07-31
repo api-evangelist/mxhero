@@ -1,0 +1,45 @@
+generated: '2026-07-20'
+method: searched
+status: published
+source: https://github.com/mxaiorg/mxmcp
+docs: https://mxhero.helpjuice.com/en_US/mxhero-ai/mxmcp
+description: >-
+  Official mxHERO Mail2Cloud Advanced MCP server. Provides AI agents with
+  secure, multi-account email search and knowledge recovery over a company's
+  captured email data, stored in an isolated per-tenant vector database. Ships
+  as both a Go stdio binary and a Python implementation, with a hosted
+  streamable-HTTP endpoint.
+server:
+  name: mxhero-mcp-server
+  vendor: mxHERO Inc.
+  product: Mail2Cloud Advanced
+  transports:
+  - stdio
+  - http
+  url: https://lab4-mcp.mxhero.com/mcp2/connect
+  implementations:
+  - language: go
+    repo: https://github.com/mxaiorg/mxmcp
+    transport: stdio
+    requires: Go 1.22+
+  - language: python
+    repo: https://github.com/mxaiorg/mxmcp-py
+    transport: stdio
+authentication:
+  type: token
+  scheme: bearer
+  note: >-
+    Requires mxHERO Vector Search credentials (a personal access token, passed
+    to the stdio binary via the required -t parameter). Demo tokens preloaded
+    with thousands of emails are available for exploration.
+  token_endpoint: https://lab4-mcp.mxhero.com/tokens
+tools:
+- name: email_search
+  description: Search stored emails and return JSON search results, with secure links back to the original messages.
+  parameters:
+  - name: query
+    type: string
+    description: Email search query.
+  returns: JSON of search results
+demo:
+  docs: https://mxhero.helpjuice.com/en_US/mxhero-ai/demo-account-for-ai-testing

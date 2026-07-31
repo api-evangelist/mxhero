@@ -1,0 +1,9 @@
+generated: '2026-07-20'
+method: generated
+source: mcp/mxhero-mcp.yml
+skills:
+- file: mxhero-email-knowledge-search.md
+  name: Search company email knowledge with mxHERO
+  api: mcp/mxhero-mcp.yml
+  operations:
+  - email_search

@@ -1,0 +1,30 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/mxaiorg/mxmcp
+docs: https://mxhero.helpjuice.com/en_US/mxhero-ai
+note: >-
+  No OpenAPI is published, so this profile is captured from mxHERO's public
+  documentation and the official MCP server repositories rather than derived
+  from a spec.
+summary:
+  types:
+  - token
+  - apiKey
+schemes:
+- name: mcp-access-token
+  type: token
+  scheme: bearer
+  used_by: Mail2Cloud Advanced MCP server (email_search)
+  location: passed as the required -t argument to the stdio binary / bearer token to the HTTP endpoint
+  token_endpoint: https://lab4-mcp.mxhero.com/tokens
+  note: mxHERO Vector Search credentials (personal access token). Demo tokens available.
+  sources:
+  - https://github.com/mxaiorg/mxmcp
+- name: mxhero-v3-api-key
+  type: apiKey
+  used_by: mxHERO V3 REST API (dataset and S/MIME management)
+  note: >-
+    mxHERO documentation references an mxHERO V3 API Key for managing datasets
+    and S/MIME through the V3 API. Endpoint reference is not publicly published.
+  sources:
+  - https://mxhero.helpjuice.com/general-information
