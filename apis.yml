@@ -56,6 +56,11 @@ apis:
   baseURL: https://lab4-mcp.mxhero.com
   tags:
   - Email
+  - Artificial Intelligence
+  - MCP
+  - Search
+  tags_raw:
+  - Email
   - AI
   - MCP
   - Search
