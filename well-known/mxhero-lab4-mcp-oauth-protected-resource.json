@@ -1,0 +1,1 @@
+{"authorization_servers":["https://mcp.mxhero.com"],"bearer_methods_supported":["header"],"resource":"https://mcp.mxhero.com","resource_name":"mxHERO email archive","scopes_supported":["query:vector","read:data"]}
