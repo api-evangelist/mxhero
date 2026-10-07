@@ -1,0 +1,94 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://www2.mxhero.com/products-pricing.html
+sources:
+- https://www2.mxhero.com/products-pricing.html
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: per-seat
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+published: true
+note: Per-user monthly pricing for platform plus three add-ons, each in SMB/Corporate/Enterprise tiers;
+  page notes 'Volume based discounts. Contact us for an accurate quote.'
+plan_count: 12
+currency: USD
+plans:
+- name: mxHero Platform - SMB
+  price_text: $18 / user / month
+  price: 18
+  currency: USD
+  period: month
+  unit: user
+- name: mxHero Platform - Corporate
+  price_text: $12 / user / month
+  price: 12
+  currency: USD
+  period: month
+  unit: user
+- name: mxHero Platform - Enterprise
+  price_text: $6 / user / month
+  price: 6
+  currency: USD
+  period: month
+  unit: user
+- name: mxHero Intelligence add-on - SMB
+  price_text: $22.50 / user/ month
+  price: 22.5
+  currency: USD
+  period: month
+  unit: user
+- name: mxHero Intelligence add-on - Corporate
+  price_text: $15 /user /month
+  price: 15
+  currency: USD
+  period: month
+  unit: user
+- name: mxHero Intelligence add-on - Enterprise
+  price_text: $7.50 / user / month
+  price: 7.5
+  currency: USD
+  period: month
+  unit: user
+- name: mxHero Archive add-on - SMB
+  price_text: $7.50 / user / month
+  price: 7.5
+  currency: USD
+  period: month
+  unit: user
+- name: mxHero Archive add-on - Corporate
+  price_text: $5 / user / month
+  price: 5
+  currency: USD
+  period: month
+  unit: user
+- name: mxHero Archive add-on - Enterprise
+  price_text: $2.50 / user / month
+  price: 2.5
+  currency: USD
+  period: month
+  unit: user
+- name: mxHero for Outlook - SMB
+  price_text: $13.50 / user/ month
+  price: 13.5
+  currency: USD
+  period: month
+  unit: user
+- name: mxHero for Outlook - Corporate
+  price_text: $9 / user / month
+  price: 9
+  currency: USD
+  period: month
+  unit: user
+- name: mxHero for Outlook - Enterprise
+  price_text: $4.50 / user / month
+  price: 4.5
+  currency: USD
+  period: month
+  unit: user
