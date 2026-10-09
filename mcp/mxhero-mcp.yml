@@ -47,3 +47,20 @@ deployment:
   probe: gated
   checked: '2026-08-12'
   source: catalog MCP census
+rfc9728:
+  endpoint: https://lab4-mcp.mxhero.com/mcp2/connect
+  metadata_url: https://mcp.mxhero.com/.well-known/oauth-protected-resource/mcp2/connect
+  discovered_via: WWW-Authenticate resource_metadata on an anonymous POST initialize
+  fetched: '2026-09-25'
+  http_status: 200
+  content_type: application/json
+  document:
+    resource: https://mcp.mxhero.com/mcp2/connect
+    authorization_servers:
+    - https://mcp.mxhero.com
+    scopes_supported:
+    - query:vector
+    - read:data
+    bearer_methods_supported:
+    - header
+    resource_name: mxHERO email archive
